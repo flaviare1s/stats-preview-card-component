@@ -12,9 +12,10 @@
 <body>
   <main>
     <div class="container">
-      <picture>
-        <source media="(max-width: 400px)" srcset="./images/image-header-mobile.jpg" type="image/jpg">
-        <img src="./images/image-header-desktop.jpg" alt="">
+      <picture class="image-container">
+        <div class="overlay"></div>
+        <source media="(min-width: 500px)" srcset="./images/image-header-desktop.jpg" type="image/jpg">
+        <img src="./images/image-header-mobile.jpg" alt="">
       </picture>
       <div class="content">
         <h1>Get insights that help your business grow.</h1>
