@@ -66,6 +66,19 @@ body {
     height: auto;
 }
 
+h1 {
+    font-family: var(--font0);
+    color: var(--color3);
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 span {
+    color: var(--color2);
+}
+
 .attribution {
     font-size: 11px; 
     text-align: center; 
@@ -94,5 +107,10 @@ body {
 
     .background-image {
         background-image: url('./images/image-header-desktop.jpg');
+    }
+
+    h1 {
+        text-align: left;
+        padding: 40px;
     }
 }
