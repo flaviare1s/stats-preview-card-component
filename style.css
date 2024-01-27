@@ -32,6 +32,7 @@ body {
     background-color: var(--color1);
     display: flex;
     flex-direction: column;
+    border-radius: 8px;
 }
 
 .image-container {
@@ -64,7 +65,7 @@ body {
 .content {
     width: 327px;
     height: auto;
-    padding: 20px;
+    padding: 30px;
 }
 
 h1 {
@@ -79,13 +80,23 @@ h1 span {
     color: var(--color2);
 }
 
-.content > p {
+.texts p {
     color: var(--color4);
     font-family: var(--font0);
     font-size: 15px;
     text-align: center;
     line-height: 1.5;
+    padding: 20px 0px;
 
+}
+
+.numbers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    padding: 0px 30px;
 }
 
 .attribution {
@@ -105,10 +116,6 @@ h1 span {
         width: 95%;
     }
 
-    .content {
-        width: 50%;
-    }
-
     .image-container {
         width: 50%;
         height: auto;
@@ -118,11 +125,31 @@ h1 span {
         background-image: url('./images/image-header-desktop.jpg');
     }
 
+    .content {
+        width: 50%;
+        padding: 40px;
+    }
+
+    
     h1 {
+        font-size: 36px;
         text-align: left;
     }
 
-    .content > p {
+    .texts p {
+        text-align: left;
+        padding-right: 50px;
+    }
+
+    .numbers {
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 50px;
+        padding: 0px 60px 0px 20px;
+    }
+
+    .numbers p {
         text-align: left;
     }
+
 }
