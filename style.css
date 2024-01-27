@@ -126,7 +126,27 @@ h1 span {
     color: var(--color2); 
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 400px) and (max-width: 1050px) {    
+    .container {
+        width: 95%;
+    }
+
+    .background-image {
+        background-image: url('./images/image-header-desktop.jpg');
+    }
+
+    .image-container {
+        width: auto;
+        height: 446px;
+    }
+
+    .content {
+        width: auto;
+    }
+    
+}
+
+@media screen and (min-width: 1050px) {
     .container {
         flex-direction: row-reverse;
         justify-content: space-around;
