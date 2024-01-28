@@ -51,6 +51,7 @@ body {
     background-color: var(--color2);
     opacity: 0.5;
     z-index: 0;
+    border-radius: 8px 8px 0px 0px;
 }
 
 .background-image {
@@ -60,6 +61,7 @@ body {
     background-size: cover;
     background-position: center;
     z-index: -1; 
+    border-radius: 8px 8px 0px 0px;
 }
 
 .content {
@@ -158,8 +160,13 @@ h1 span {
         height: auto;
     }
 
+    .image-container::after {
+        border-radius: 0px 8px 8px 0px;
+    }
+
     .background-image {
         background-image: url('./images/image-header-desktop.jpg');
+        border-radius: 0px 8px 8px 0px;
     }
 
     .content {
